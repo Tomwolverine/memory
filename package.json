@@ -2,10 +2,11 @@
     "name": "galvanize-memory",
     "version": "0.0.2",
     "description": "",
-    "main": "app.js",
+    "main": "index.js",
     "scripts": {
         "start": "node index.js",
-        "test": "mocha --exit"
+        "test": "mocha --exit",
+        "knex": "knex"
     },
     "author": "Kyle Coberly",
     "license": "ISC",

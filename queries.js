@@ -2,7 +2,7 @@ const database = require("./database-connection");
 
 module.exports = {
     list(){
-        return database('resolution').select();
+        return database('resolution').select().orderBy('id', 'asc');
     },
     read(id){
         return database('resolution').select().where('id', id);

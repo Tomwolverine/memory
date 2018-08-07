@@ -4,10 +4,10 @@ module.exports = {
 
   development: {
     client: 'pg',
-    connection: 'postgres///resolution1'
+    connection: process.env.DATABASE_URL || 'postgres///resolution',
   },
   production: {
     client: 'pg',
-    connection: process.env.DATABASE_URL + '?ssl=true'
+    connection: process.env.DATABASE_URL || 'postgres///resolution',
   }
 }
